@@ -4,8 +4,11 @@ public class Main {
 
     long amount = 1000_60;
     boolean registered = true;
+    long expected = 30;
 
-    service.calculate(amount, registered);
+   long bonus = service.calculate(amount, registered);
+
+   System.out.println(bonus);
   }
 }
 
